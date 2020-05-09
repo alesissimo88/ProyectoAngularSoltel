@@ -1,0 +1,49 @@
+.logo{
+    width: 250px;
+    height: 100px;
+    margin-left: 30px;
+}
+
+.cabecera-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 50px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.home, .refuerzo, .cursos, .contacto{
+    text-decoration: none;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: helvetica;
+    font-weight: 300;
+    font-size: 20px;
+    font-style: italic;
+    color: #244b5c;
+    background-color: white;
+    border-radius: 15px;
+    border: 3px double #244b5c;
+  }
+  .home, .refuerzo, .cursos, .contacto:hover{
+    /*opacity: 0.5;*/
+    text-decoration: none;
+  }
+
+  .instagram {
+    width: 50px;
+    height: 50px;
+  }
+
+  .fb{
+    width: 65px;
+    height: 65px;
+  }
+
+  .whatsapp{
+    width: 70px;
+    height: 70px;
+  }
+
