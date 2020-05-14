@@ -1,0 +1,23 @@
+{
+    "alumnos": [
+        {
+            "id": "1",
+            "nombre": "Pipe",
+            "apellidos": "Pita",
+            "direccion": "Acacias",
+            "telefono": "956000000",
+            "email": "pipe@gmail.com",
+            "ciudad": "Cadiz",
+            "curso": "2º Bachiller",
+            "registrado": "true"
+        }
+    ],
+
+    "contacto": [
+        {
+            
+        }
+
+    ]
+
+}

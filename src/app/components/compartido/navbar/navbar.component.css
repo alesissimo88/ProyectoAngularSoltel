@@ -13,7 +13,7 @@
     margin-top: 10px;
 }
 
-.home, .refuerzo, .cursos, .contacto{
+.home, .refuerzo, .cursos, .login, .contacto{
     text-decoration: none;
     padding: 3px;
     padding-left: 10px;
@@ -21,16 +21,21 @@
     font-family: helvetica;
     font-weight: 300;
     font-size: 20px;
-    font-style: italic;
     color: #244b5c;
-    background-color: white;
-    border-radius: 15px;
-    border: 3px double #244b5c;
+    background-color: transparent;
+    border-radius: 3px;
+    display: inline-block;
+    border: 3px solid #244b5c;
+    
   }
-  .home, .refuerzo, .cursos, .contacto:hover{
+  .home:hover, .refuerzo:hover, .cursos:hover, .login:hover, .contacto:hover{
     /*opacity: 0.5;*/
     text-decoration: none;
+    background-color: #244b5c;
+    border: 3px solid #244b5c;
+    color: white;
   }
+
 
   .instagram {
     width: 50px;
@@ -46,4 +51,49 @@
     width: 70px;
     height: 70px;
   }
+
+  
+  .nav li a {
+    background-color: white;
+    color: #244b5c;
+    text-decoration:none;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display:block;
+    border: 3px solid #244b5c;
+    font-family: helvetica;
+    font-weight: 300;
+    font-size: 20px;
+  }
+  
+  .nav li a:hover {
+    text-decoration: none;
+    background-color: #244b5c;
+    color: white;
+  }
+  
+  .nav li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+    border: none;
+  }
+  
+  .nav li:hover > ul {
+    display:block;
+  }
+  
+  .nav li ul li {
+    position: relative;
+    display: inline-flex;
+  }
+  
+  .nav li ul li ul {
+    right:-140px;
+    top:0px;
+  }
+
+
+
 

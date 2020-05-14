@@ -1,0 +1,60 @@
+.titulo{
+    text-align: center;
+}
+
+.titulo2{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.asignaturas{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.tituloajuste{
+    background-color: #f7cd68;
+}
+
+.asignaturas p{
+    color: #5d5d5d;
+    font-size: 15px;
+    line-height: 10px;
+}
+
+strong{
+    font-weight: bold;
+}
+
+.tarifa{
+    text-align: center;
+    color: red;
+}
+
+td{
+    display: table-cell;
+    text-align: center;
+}
+
+.precios{
+    width: 30%;
+    border-collapse: collapse;
+    border-color: #000000;
+    border-style: solid;
+    margin-bottom: 20px;
+}
+
+div.centrartabla table {
+    margin: 0 auto;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.imagen{
+    width: 300px;
+    height: 200px;
+    margin-bottom: 40px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}

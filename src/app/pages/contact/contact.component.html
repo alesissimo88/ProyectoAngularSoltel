@@ -1,0 +1,117 @@
+<div class="contact-prin">
+
+<br>
+<br>
+
+
+            <div class="columna">
+                <br>
+                <br>
+                <br>
+                <h3 class="text-center">¡ Escríbenos !</h3>
+                <br>
+                <br>
+                <h5 class="text-center">
+                    ¿Quieres obtener información sobre algún servicio?
+                <br>
+                    ¿Quieres realizar alguna propuesta?
+                </h5>
+                <br>
+                <br>
+                <label class="text-center">En cualquier caso, no dudes en ponerte en contacto con nosotros en el siguiente formulario de contacto.
+                </label>
+            </div>
+
+
+            <div class="columna">
+                <div class="caja row animated fadeIn faster ml-3 mr-3">
+                    <div class="col">
+                
+                        <form (ngSubmit)="enviar( f )" #f="ngForm">
+                
+                            <div class="form-group">
+                                <label>Nombre</label>
+                                <input type="text" 
+                                        class="form-control" 
+                                        name="nombre" 
+                                        placeholder="Nombre" 
+                                        required>
+                            </div>
+                
+                            <!--
+                            <div class="form-group">
+                                <label>Teléfono de contacto</label>
+                                <input type="text" 
+                                        class="form-control" 
+                                        [(ngModel)]="alumno.telefono"
+                                        name="telefono"
+                                        placeholder="Telefono" 
+                                        required>
+                            </div>
+                            -->
+                
+                
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input type="text" 
+                                        class="form-control" 
+                                        name="email"
+                                        placeholder="Email" 
+                                        required>
+                            </div>
+                
+                            <div class="form-group">
+                                <label>Asunto</label>
+                                <input type="text" 
+                                        class="form-control" 
+                                        name="asunto"
+                                        placeholder="Asunto" 
+                                        required>
+                            </div>
+                
+                            <!--
+                            <div class="form-group">
+                                <label>Curso</label>
+                                <select class="form-control" [(ngModel)]="alumno.curso" name="curso">
+                                    <option value="" disabled selected>Elige una opción</option>
+                                    <option value="1º Primaria">1º Primaria</option>
+                                    <option value="2º Primaria">2º Primaria</option>
+                                    <option value="3º Primaria">3º Primaria</option>
+                                    <option value="4º Primaria">4º Primaria</option>
+                                    <option value="5º Primaria">5º Primaria</option>
+                                    <option value="6º Primaria">6º Primaria</option>
+                                    <option value="" disabled>SECUNDARIA</option>
+                                    <option value="1º ESO">1º ESO</option>
+                                    <option value="2º ESO">2º ESO</option>
+                                    <option value="3º ESO">3º ESO</option>
+                                    <option value="4º ESO">4º ESO</option>
+                                    <option value="" disabled>BACHILLERATO</option>
+                                    <option value="1º Bachillerato">1º Bachillerato</option>
+                                    <option value="2º Bachillerato">2º Bachillerato</option>
+                                    <option value="" disabled>OTRAS CONSULTAS</option>
+                                    <option value="Otros">Otras consultas</option>
+                                </select>
+                            </div>
+                            -->
+                
+                            <div class="form-group">
+                                <label for="msg">Mensaje:</label>
+                                <textarea id="msg" name="user_message" class="form-control" placeholder="Escriba aquí su mensaje.."></textarea>
+                            </div>
+                    
+                
+                            <hr>
+                
+                            <div class="form-group text-center">
+                                <button type="submit" class="btn btn-dark w-25">
+                                    <i class=""></i>
+                                    ENVIAR
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+</div>
+

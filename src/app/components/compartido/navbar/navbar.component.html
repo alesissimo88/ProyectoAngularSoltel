@@ -3,27 +3,47 @@
     <div class="cabecera-container" >
 
         <div>
-            <img class="logo" src="/assets/img/logofinalCECS.png">
+            <img routerLink="/home" class="logo" src="/assets/img/logofinalCECS.png">
         </div>
 
         <div>  
-            <a href="" class="home">INICIO</a>
+            <a routerLink="/home" class="home">INICIO</a>
         </div> 
-    
+        
+        <!--
         <div>  
             <a href="" class="refuerzo">REFUERZO</a>
         </div> 
+        -->
+
+        <div id="header">
+			<ul class="nav">
+				<li><a href="" class="refuerzo">REFUERZO</a>
+					<ul>
+						<li><a routerLink="/primaria">Primaria</a></li>
+						<li><a routerLink="/secundaria">Secundaria</a></li>
+                        <li><a routerLink="/bachillerato">Bachillerato</a></li>
+                        <li><a routerLink="/gade">Grado en ADE</a></li>
+                        <!-- <li><a href="">Grado en FYCO</a></li> -->
+					</ul>
+				</li>
+			</ul>
+		</div>
     
         <div>  
             <a href="" class="cursos">CURSOS</a>
         </div> 
+
+        <div>  
+            <a routerLink="/contact" class="contacto">CONTACTO</a>
+        </div> 
     
         <div>  
-            <a href="" class="contacto">CONTACTO</a>
+            <a routerLink="/login" class="login">LOGIN</a>
         </div> 
 
         <div>
-            <img class="instagram" src="/assets/img/instagram.png">
+            <a href="https://www.instagram.com/ceciudadsantander/?hl=es"><img  class="instagram" src="/assets/img/instagram.png"></a>
             <a href="https://www.facebook.com/ceciudadsantander/"><img class="fb" src="/assets/img/fb.png"></a>
             <a href="https://api.whatsapp.com/send?phone=34647833221"><img class="whatsapp" src="/assets/img/whatsapp.png"></a>
         </div>

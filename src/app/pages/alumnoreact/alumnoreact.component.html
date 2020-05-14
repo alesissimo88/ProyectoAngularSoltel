@@ -1,0 +1,141 @@
+<h4 class="mt-4 ml-5">Formulario <small>Reactivo Alumno</small></h4>
+<hr>
+<form autocomplete="off" [formGroup]="forma" (ngSubmit)="guardar()" class="ml-5 mr-5">
+
+  <div>
+
+    
+
+    <div class="form-group row">
+      <label class="col-2 col-form-label">Nombre</label>
+      <div class="col">
+
+        <input class="form-control"
+               type="text"
+               placeholder="Nombre"
+               formControlName="nombre"
+               [class.is-invalid]="nombreNoValido">
+        <small *ngIf="nombreNoValido" class="text-danger">
+                 Ingrese un nombre
+        </small>
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label class="col-2 col-form-label">Apellidos</label>
+      <div class="col">
+
+        <input class="form-control"
+               type="text"
+               placeholder="Apellidos"
+               formControlName="apellido"
+               [class.is-invalid]="apellidoNoValido">
+        <small *ngIf="apellidoNoValido" class="text-danger">
+                 Ingrese los apellidos
+        </small>
+      </div>
+    </div>
+
+    <div class="form-group row">
+        <label class="col-2 col-form-label">Dirección</label>
+        <div class="col">
+  
+          <input class="form-control"
+                 type="text"
+                 placeholder="Dirección"
+                 formControlName="direccion"
+                 [class.is-invalid]="direccionNoValido">
+          <small *ngIf="direccionNoValido" class="text-danger">
+                   Ingrese su dirección
+          </small>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label class="col-2 col-form-label">Teléfono</label>
+        <div class="col">
+  
+          <input class="form-control"
+                 type="text"
+                 placeholder="Teléfono de contacto"
+                 formControlName="telefono"
+                 [class.is-invalid]="telefonoNoValido">
+          <small *ngIf="telefonoNoValido" class="text-danger">
+                   Ingrese su número de teléfono
+          </small>
+        </div>
+      </div>
+
+  </div>
+
+  <div class="form-group row">
+    <label class="col-2 col-form-label">Correo</label>
+    <div class="col">
+
+      <input class="form-control"
+             type="email"
+             placeholder="Correo electrónico"
+             formControlName="correo"
+             [class.is-invalid]="correoNoValido">
+      <small *ngIf="correoNoValido" class="text-danger">
+               Ingrese un correo
+      </small>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label class="col-2 col-form-label">Ciudad</label>
+    <div class="col">
+
+      <input class="form-control"
+             type="text"
+             placeholder="Ciudad"
+             formControlName="ciudad"
+             [class.is-invalid]="ciudadNoValido">
+      <small *ngIf="ciudadNoValido" class="text-danger">
+               Ingrese un Ciudad
+      </small>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label class="col-2 col-form-label">Curso</label>
+    <div class="col">
+
+      <input class="form-control"
+             type="text"
+             placeholder="Curso escolar (Ej: 1º Primaria)"
+             formControlName="curso"
+             [class.is-invalid]="cursoNoValido">
+      <small *ngIf="cursoNoValido" class="text-danger">
+               Ingrese el curso escolar al que pertenece
+      </small>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label class="col-2 col-form-label">Solicitud</label>
+    <div class="col">
+
+      <input class="form-control"
+             type="text"
+             placeholder="Estado de la solicitud (Ej: Alta o Baja)"
+             formControlName="solicitud"
+             [class.is-invalid]="solicitudNoValido">
+      <small *ngIf="solicitudNoValido" class="text-danger">
+               Ingrese el estado de la solicitud
+      </small>
+    </div>
+  </div>
+
+
+  <div class="form-group row">
+    <label class="col-2 col-form-label">&nbsp;</label>
+    <div class="input-group col">
+      <button type="submit" class="btn btn-outline-primary btn-block">
+        Guardar
+      </button>
+    </div>
+  </div>
+
+</form>

@@ -1,12 +1,11 @@
 .home-prin{
     width: 100%;
-    height: 900px;
-    border: solid 1px black;
+    height: auto;
 }
 
 .superior{
     width: 100%;
-    height: 200px;
+    height: 250px;
     background-color: #244b5c;
     display: flex;
     justify-content: space-between;
@@ -22,49 +21,70 @@
     background: #f97171;
     margin-left: 100px;
     margin-right: 100px;
+    margin-top: -25px;
 }
 
-.medio{
-    width: 100%;
-    height: 400px;
-    background-color: #f3f3f39d;
+
+.servicios{
+    height: auto;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 25px;
+    background-color: #f7cd68;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 30px;
 }
 
-.titulo-medio{
+.col1 {
     text-align: center;
     padding-top: 15px;
     font-size: 25px;
-    font-family: courier;
+    font-family: 'Open Sans', sans-serif;
 }
 
-.titulo-medio > h5{
-    color: #757575;
-}
-
-.titulo-medio > h3 {
-    color: #414141
-}
-
-.medio-bajo{
-    width: 100%;
-    height: 100px;
-    background-color: #f3f3f3;
-}
-
-.titulo-medio-bajo{
+.col2 {
     text-align: center;
     padding-top: 15px;
     font-size: 25px;
-    font-family: courier;
+    font-family: 'Open Sans', sans-serif;
 }
 
-.titulo-medio-bajo > h5{
+  
+
+.servicios > h5 {
+    color: #244b5c;
+    padding-top: 13px;
+    font-size: 20px;
+}
+
+.servicios > h3 {
+    color: #414141;
+    font-size: 34px;
+}
+
+
+.oferta{
+    text-align: center;
+    padding-top: 15px;
+    font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f7cd68;
+}
+
+.oferta > h5 {
     color: #757575;
+    padding-bottom: 20px;
+    padding-top: 13px;
+    font-size: 30px;
+    background-color: #f7cd68;
 }
 
-.titulo-medio-bajo > h3 {
-    color: #414141
+.oferta > h3 {
+    color: #414141;
+    font-size: 34px;
+    padding-top: 13px;
 }
+
 
 .inferior{
     width: 100%;
@@ -74,8 +94,68 @@
     padding-top: 25px;
 }
 
-.titulo-bajo > h2 {
-    color: white;
-    font-family: courier;
+
+.apoyo {
+      color: white;
+      margin-left: 20px;
+      margin-top: 45px;
+      font-size: 22px;
 }
+
+.refuerzo{
+    color: white;
+    margin-left: 5px;
+    margin-top: 45px;
+    font-size: 22px;
+}
+
+.idiomas{
+    color: white;
+    margin-left: 15px;
+    margin-top: 45px;
+    font-size: 22px;
+}
+
+.cursos {
+    color: white;
+    margin-left: 20px;
+    margin-top: 45px;
+    font-size: 22px;
+}
+
+.fa-book, .fa-pencil, .fa-tablet{
+    font-size: 35px; 
+    color: #ffffff;
+    margin-left: 35px;
+    margin-top: 30px;
+}
+
+.fa-language{
+    font-size: 35px; 
+    color: #ffffff;
+    margin-left: 28px;
+    margin-top: 30px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+p {
+    color: #5d5d5d;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+p.has-small-font-size{
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    color: #5d5d5d;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+
+
 

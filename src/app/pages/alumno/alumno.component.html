@@ -1,0 +1,156 @@
+
+<h1 class="titulo mt-5 ml-5">Alumno <small> {{ alumno.nombre}} {{alumno.apellidos }}</small></h1>
+<hr>
+
+<div class="row text-right">
+    <div class="col">
+        <button class="btn btn-danger mr-4" routerLink="/alumnos">
+            <i class="fa fa-arrow-left"></i>
+            Regresar
+        </button>
+    </div>
+</div>
+
+
+<div class="row animated fadeIn faster ml-3 mr-3">
+    <div class="col">
+
+        <form (ngSubmit)="guardar( f )" #f="ngForm">
+
+            <div class="form-group">
+                <label>ID Alumno</label>
+                <input type="text" 
+                        class="form-control" 
+                        disabled="disabled" 
+                        [(ngModel)]="alumno.id"
+                        name="id"
+                        placeholder="ID Alumno">
+            <small class="form-text text-muted">Este campo es autogenerado</small>
+            </div>
+
+            <div class="form-group">
+                <label>Nombre</label>
+                <input type="text" 
+                        class="form-control" 
+                        [(ngModel)]="alumno.nombre"
+                        name="nombre" 
+                        placeholder="Nombre" 
+                        required>
+            </div>
+
+            <div class="form-group">
+                <label>Apellidos</label>
+                <input type="text" 
+                        class="form-control" 
+                        [(ngModel)]="alumno.apellidos"
+                        name="apellidos"
+                        placeholder="Apellidos" 
+                        required>
+            </div>
+
+            <div class="form-group">
+                <label>Dirección</label>
+                <input type="text" 
+                        class="form-control" 
+                        [(ngModel)]="alumno.direcion"
+                        name="direccion"
+                        placeholder="Dirección" 
+                        required>
+            </div>
+
+            <div class="form-group">
+                <label>Teléfono de contacto principal</label>
+                <input type="text" 
+                        class="form-control" 
+                        [(ngModel)]="alumno.telefono"
+                        name="telefono"
+                        placeholder="Telefono" 
+                        required>
+            </div>
+
+
+            <div class="form-group">
+                <label>Email</label>
+                <input type="text" 
+                        class="form-control" 
+                        [(ngModel)]="alumno.email"
+                        name="email"
+                        placeholder="Email" 
+                        required>
+            </div>
+
+            <!--
+            <div class="form-group">
+                <label>Ciudad</label>
+                <input type="text" 
+                        class="form-control" 
+                        [(ngModel)]="alumno.ciudad"
+                        name="ciudad"
+                        placeholder="Ciudad" 
+                        required>
+            </div>  -->
+
+
+            <div class="form-group">
+                <label>Ciudad</label>
+                <select class="form-control" [(ngModel)]="alumno.ciudad" name="ciudad">
+                    <option value="" disabled selected>Elige una opción</option>
+                    <option value="Cadiz">Cádiz</option>
+                    <option value="Sevilla">Sevilla</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Curso</label>
+                <select class="form-control" [(ngModel)]="alumno.curso" name="curso">
+                    <option value="" disabled selected>Elige una opción</option>
+                    <option value="1º Primaria">1º Primaria</option>
+                    <option value="2º Primaria">2º Primaria</option>
+                    <option value="3º Primaria">3º Primaria</option>
+                    <option value="4º Primaria">4º Primaria</option>
+                    <option value="5º Primaria">5º Primaria</option>
+                    <option value="6º Primaria">6º Primaria</option>
+                    <option value="" disabled>SECUNDARIA</option>
+                    <option value="1º ESO">1º ESO</option>
+                    <option value="2º ESO">2º ESO</option>
+                    <option value="3º ESO">3º ESO</option>
+                    <option value="4º ESO">4º ESO</option>
+                    <option value="" disabled>BACHILLERATO</option>
+                    <option value="1º Bachillerato">1º Bachillerato</option>
+                    <option value="2º Bachillerato">2º Bachillerato</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Estado Inscripción</label>
+                <br>
+                <button *ngIf="alumno.alta" (click)="alumno.alta = false" class="btn btn-outline-success w-50" type="button">
+                    <i class=""></i>
+                    Alta
+                </button>
+
+                <button *ngIf="!alumno.alta" (click)="alumno.alta = true" class="btn btn-outline-danger w-50" type="button">
+                    <i class=""></i>
+                    Baja
+                </button>
+            </div>
+    
+
+            <hr>
+
+            <div class="form-group text-center">
+                <button type="submit" class="btn btn-primary w-25">
+                    <i class="fa fa-save"></i>
+                    Guardar
+                </button>
+            </div>
+
+
+
+        </form>
+    </div>
+</div>
+
+
+            
+    
