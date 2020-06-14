@@ -1,5 +1,4 @@
-
-export class AlumnoModel{
+export class AlumnoModel {
     id: string;
     nombre: string;
     apellidos: string;
@@ -10,7 +9,7 @@ export class AlumnoModel{
     curso: string;
     registrado: string;
 
-    constructor(){ 
+    constructor() {
         // this.registrado = true;
     }
 }

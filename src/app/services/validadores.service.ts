@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
 
 interface ErrorValidate {
   // Regresa cualquier cantidad de llaves, siendo su valor boolean.
-  [s:string]: boolean
+  [s:string]: boolean;
 }
 
 @Injectable({
@@ -23,12 +23,12 @@ export class ValidadoresService {
     }
 
 
-   //Defino promesa
-   return new Promise( (resolve, reject) =>{
+   // Defino promesa
+    return new Promise( (resolve, reject) =>{
 
     setTimeout(() => {
 
-      if ( control.value === 'strider' ){
+      if ( control.value === 'alesissimo' ){
         resolve({ existe: true }); 
       } else {
         resolve( null );

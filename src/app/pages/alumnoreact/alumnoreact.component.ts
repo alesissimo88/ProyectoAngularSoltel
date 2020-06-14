@@ -24,40 +24,40 @@ export class AlumnoreactComponent implements OnInit {
 
   // Métodos get para mostrar las validaciones de cada campo
   get nombreNoValido() {
-    return this.forma.get('nombre').invalid && this.forma.get('nombre').touched
+    return this.forma.get('nombre').invalid && this.forma.get('nombre').touched;
   }
 
   get apellidoNoValido() {
-    return this.forma.get('apellido').invalid && this.forma.get('apellido').touched
+    return this.forma.get('apellido').invalid && this.forma.get('apellido').touched;
   }
 
   get correoNoValido() {
-    return this.forma.get('correo').invalid && this.forma.get('correo').touched
+    return this.forma.get('correo').invalid && this.forma.get('correo').touched;
   }
 
 
   get usuarioNoValido() {
-    return this.forma.get('usuario').invalid && this.forma.get('usuario').touched
+    return this.forma.get('usuario').invalid && this.forma.get('usuario').touched;
   }
 
   get direccionNoValido() {
-    return this.forma.get('direccion').invalid && this.forma.get('direccion').touched
+    return this.forma.get('direccion').invalid && this.forma.get('direccion').touched;
   }
 
   get telefonoNoValido() {
-    return this.forma.get('telefono').invalid && this.forma.get('telefono').touched
+    return this.forma.get('telefono').invalid && this.forma.get('telefono').touched;
   }
 
   get ciudadNoValido() {
-    return this.forma.get('ciudad').invalid && this.forma.get('ciudad').touched
+    return this.forma.get('ciudad').invalid && this.forma.get('ciudad').touched;
   }
 
   get cursoNoValido() {
-    return this.forma.get('curso').invalid && this.forma.get('curso').touched
+    return this.forma.get('curso').invalid && this.forma.get('curso').touched;
   }
 
   get solicitudNoValido() {
-    return this.forma.get('solicitud').invalid && this.forma.get('solicitud').touched
+    return this.forma.get('solicitud').invalid && this.forma.get('solicitud').touched;
   }
 
   

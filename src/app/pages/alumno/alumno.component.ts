@@ -19,30 +19,27 @@ export class AlumnoComponent implements OnInit {
 
   alumno: AlumnoModel = new AlumnoModel();
 
-  constructor( private alumnosService: AlumnosService,  private route: ActivatedRoute ) { }
+  constructor(private alumnosService: AlumnosService, private route: ActivatedRoute) { }
 
   ngOnInit() {
 
     const id = this.route.snapshot.paramMap.get('id');
 
-    if ( id !== 'nuevo' ){
+    if (id !== 'nuevo') {
 
-      this.alumnosService.getAlumno( id )
-        .subscribe( (resp: AlumnoModel ) => {
+      this.alumnosService.getAlumno(id)
+        .subscribe((resp: AlumnoModel) => {
           this.alumno = resp;
           this.alumno.id = id;
         });
-
     }
-
-
   }
-  
 
-  guardar( form: NgForm ){
 
-    if ( form.invalid ){
-      console.log( 'Formulario no válido' );
+  guardar(form: NgForm) {
+
+    if (form.invalid) {
+      console.log('Formulario no válido');
       return;
     }
 
@@ -55,17 +52,17 @@ export class AlumnoComponent implements OnInit {
       allowOutsideClick: false
     });
 
-    
-    Swal.showLoading();
-    let peticion: Observable <any>;
 
-    if ( this.alumno.id ){
-      peticion = this.alumnosService.actualizarAlumno( this.alumno );
+    Swal.showLoading();
+    let peticion: Observable<any>;
+
+    if (this.alumno.id) {
+      peticion = this.alumnosService.actualizarAlumno(this.alumno);
     } else {
-      peticion = this.alumnosService.crearAlumno( this.alumno );
+      peticion = this.alumnosService.crearAlumno(this.alumno);
     }
 
-    peticion.subscribe( resp => {
+    peticion.subscribe(resp => {
       Swal.fire({
         title: this.alumno.nombre,
         text: 'Se actualizó correctamente',
@@ -73,7 +70,5 @@ export class AlumnoComponent implements OnInit {
       });
 
     });
-
   }
-
 }

@@ -14,6 +14,7 @@
 
 .tituloajuste{
     background-color: #f7cd68;
+    border-radius: 8px;
 }
 
 .asignaturas p{
@@ -58,6 +59,11 @@ div.centrartabla table {
     margin-left: auto;
     margin-right: auto;
 }
+
+.primaria{
+    padding-top: 120px;
+}
+
 
 
 
